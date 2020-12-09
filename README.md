@@ -15,3 +15,7 @@ npm test ( Para rodar os testes )
 # Documentação.
 
 Para entrar na documentação bastar acessar a rota http://localhost:3333/api-docs com o projeto rodando.
+
+# Requisitos.
+
+Para conseguir rodar o projeto no seu computador é necessario ter mongodb instalado.
