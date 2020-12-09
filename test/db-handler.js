@@ -16,13 +16,6 @@ module.exports.connect = async () => {
         };
         mongoose.connect(mongoUri, mongooseOpts);
 
-        mongoose.connection.on('error', (e) => {
-            console.log('ERROR', e);
-        });
-
-        mongoose.connection.once('open', () => {
-            console.log(`MongoDB successfully connected to ${mongoUri}`);
-        })
     })
 }
 /**

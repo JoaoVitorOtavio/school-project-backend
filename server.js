@@ -26,11 +26,7 @@ app.use(cors())
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 
-// to connect in the right db table
-
 routes(app);
-// app.listen(port)
-// console.log('todo list RESTful API server started on: ' + port);
 if (process.env.NODE_ENV !== 'test') {
   app.listen(port, async () => {
     mongoose.connect("mongodb://localhost/SchoolProject", {

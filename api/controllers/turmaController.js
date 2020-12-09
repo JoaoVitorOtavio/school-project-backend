@@ -26,13 +26,11 @@ exports.create_turmas = (req, res) => {
 
 
 exports.readOne_turmas = (req, res) => {
-  // console.log("BATEU NO READ ONE TURMAS", req.params.turmaId)
   Turmas.findById(req.params.turmaId)
     .then(resp => {
       res.status(200).json(resp)
     })
     .catch(err => {
-      // console.log("BATEU NO READ ONE TURMAS ERRR", err)
       res.status(400).send(err)
     })
 };
